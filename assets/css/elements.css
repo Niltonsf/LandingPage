@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing:  border-box;
 }
 
 html {
@@ -45,4 +46,36 @@ a {
 
 p {
     margin-bottom: 2rem;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 400px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.2rem
+}
+
+table thead th {
+    text-align: center;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 0.5rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+table tfoot td {
+    text-align: center;
 }

@@ -14,17 +14,20 @@
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
 
-    <body class="bg-circle">
+    <body>
+
+        <input type="checkbox" role="buttton" aria-label="Close menu" id="close-menu" class="close-menu"/>
+        <label for="close-menu" title="close-menu" class="close-menu-label"></label>
         <aside class="menu">
             <div class="main-content menu-content">
-                <h1><a href="#">LOGO</a></h1>
+                <h1 onclick="getElementById('close-menu').checked = false"><a href="#intro">LOGO</a></h1>
                 <nav>
-                    <ul>
-                        <li><a href="#intro">INTRO</a></li>
+                    <ul onclick="getElementById('close-menu').checked = false">
                         <li><a href="#top3">TOP 3</a></li>
                         <li><a href="#grid-intro">GRID ONE</a></li>
                         <li><a href="#gallery">GALLERY</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -76,10 +79,124 @@
             </div>
         </section>
 
-        <section class="section white-bg" id="gallery">
-            <div class="main-content">
-                <h1>Teste</h1>
+
+        <section class="white-bg section" id="gallery">
+            <div class="grid-intro-content main-content">
+                <h2>gallery</h2>
+                <p class="description">Uma breve descrição</p>
+                <div class="grid">
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=1" alt="random img"/>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=2" alt="random img"/>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=3" alt="random img"/>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=4" alt="random img"/>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=5" alt="random img"/>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=6" alt="random img"/>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section class="section bg-circle" id="pricing">
+            <div class="main-content top3-content">
+                <h2>Pricing</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source</p>
+                <div class="responsive-table">
+                    <table>
+                        <caption>Pricing table</caption>
+                        <thead>
+                            <tr>
+                                <th>Titulo 1</th>
+                                <th>Titulo 2</th>
+                                <th>Titulo 3</th>
+                                <th>Titulo 4</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                                <td>Content 4</td>
+                            </tr>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                                <td>Content 4</td>
+                            </tr>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                                <td>Content 4</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Testando</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section white-bg" id="contact">
+            <div class="main-content intro-content">
+                <div class="intro-text">
+                    <h2>Cadastre-se para ter acesso a mais configurações!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Numquam placeat ducimus doloribus magni vero non quibusdam explicabo,
+                    itaque fugit a tempore culpa totam saepe vitae in corrupti. Nisi,
+                    non similique.</p>
+                </div>
+                <div class="intro-img">
+                    <img src="/assets/img/intro-img.svg" alt="Desenho de uma mulher mostrando um aplicativo de telefone">
+                </div>
+        
+                <div class="contact-form">
+                    <fieldset class="form-grid">
+                        <legend>Contact me</legend>
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="First name">
+                        </div>
+                        <div class="form-group">
+                            <label for="first-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="first-name">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="first-name">Message</label>
+                            <textarea name="message" id="message" \
+                            cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group" style="text-align:center">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+
+        <footer class="white-bg footer-content">
+            <p><a href="">Feito por Nilton A Schumacher Filho</a></p>
+        </footer>
     </body>
 </html> 

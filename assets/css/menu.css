@@ -49,4 +49,5 @@
 .menu ul li a:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    color: #988BC7;
 }
