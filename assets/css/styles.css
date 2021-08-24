@@ -9,7 +9,7 @@
 .intro-text, .intro-img {
     display: flex;
     flex-flow: column wrap;
-    flex-wrap: nowrap;
+    overflow-wrap: break-word;
 }
 
 .intro-img img{
@@ -35,7 +35,7 @@
 }
 
 .grid-intro-content h2 {
-    padding-top: 60px;
+    padding-top: 6rem;
 }
 
 .grid-intro-content h2 {
@@ -182,6 +182,15 @@ body .full-width {
 
     .form-group input, .form-group textarea {
         width: 70%;
+    }
+
+    .intro-text p {
+        width: 70%;
+    }
+
+    .h2-responsive {
+        width: 70%;
+        flex-wrap: wrap;
     }
 
     .grid-intro-content{
